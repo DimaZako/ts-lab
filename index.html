@@ -23,20 +23,26 @@
 
     <section class="posts" id="posts">
       <h2>Пости з JSONPlaceholder</h2>
-      <div id="postsContainer" class="posts-container"></div>
+      <div id="postsContainer" class="posts-container">
+        <!-- Сюди будуть підгружатися пости -->
+      </div>
     </section>
   </main>
 
   <button id="backToTopBtn" class="back-to-top hidden">↑ Нагору</button>
 
+  <!-- Модальне вікно -->
   <div id="modal" class="modal hidden">
     <div class="modal-content">
       <button id="closeModalBtn" class="modal-close">&times;</button>
       <h2>Модальне вікно</h2>
-      <p>Це модальне вікно відкривається по кліку на кнопку та закривається по кліку або ESC.</p>
+      <p>
+        Це модальне вікно відкривається по кліку на кнопку та закривається по кліку або ESC.
+      </p>
     </div>
   </div>
 
-  <script type="module" src="./dist/main.js"></script>
+  <!-- Підключаємо JS, який згенерований з TypeScript -->
+  <script src="./dist/main.js"></script>
 </body>
 </html>
