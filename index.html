@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>TypeScript Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>TypeScript Landing Page</h1>
+    <button id="openModalBtn" class="btn">Відкрити модальне вікно</button>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <h2>Ласкаво просимо!</h2>
+      <p>
+        Це демо-сторінка з інтерактивністю на TypeScript:
+        модальне вікно, кнопка повернення нагору, анімації та дані з API.
+      </p>
+    </section>
+
+    <section class="posts" id="posts">
+      <h2>Пости з JSONPlaceholder</h2>
+      <div id="postsContainer" class="posts-container">
+        <!-- Сюди будуть додаватися карти постів -->
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTopBtn" class="back-to-top hidden">↑ Нагору</button>
+
+  <!-- Модальне вікно -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModalBtn" class="modal-close">&times;</button>
+      <h2>Модальне вікно</h2>
+      <p>
+        Це модальне вікно відкривається по кліку на кнопку та закривається по кліку або ESC.
+      </p>
+    </div>
+  </div>
+
+  <!-- ПІДКЛЮЧАЄМО СКОМПІЛЬОВАНИЙ JS (після tsc) -->
+  <script type="module" src="./dist/main.js"></script>
+</body>
+</html>
